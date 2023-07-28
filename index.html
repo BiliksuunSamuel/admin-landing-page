@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sales Dashbaord</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet" />
+    <link rel="favicon" href="./public/fav32.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="navbar-container-left">
+            <div class="input-group">
+              <input
+                type="search"
+                name="search"
+                class="search-input"
+                placeholder="Search everything"
+              />
+              <i class="fa fa-search search-custom"></i>
+            </div>
+          </div>
+          <div class="navbar-container-right">
+            <div class="badge-container">
+              <i class="fa fa-bell notification-bell"></i>
+              <div class="badge">4</div>
+            </div>
+            <div class="sizedbox-h"></div>
+            <div class="avatar-container">
+              <i class="fa fa-user"></i>
+              <div class="avatar-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="content-container">
+        <div class="container-stats">
+          <div class="stats">
+            <h3 class="stats-value">200</h3>
+            <p class="stats-label">Total Number of Accounts</p>
+          </div>
+          <div class="stats">
+            <h3 class="stats-value">100</h3>
+            <p class="stats-label">Total Number of Users</p>
+          </div>
+          <div class="stats">
+            <h3 class="stats-value">5</h3>
+            <p class="stats-label">Average Number of Users Per Accounts</p>
+          </div>
+        </div>
+        <div class="sizedbox-v"></div>
+        <div class="container-filter">
+          <div class="container-pagination-selector">
+            <p class="filter-label">Rows per page</p>
+            <select name="pagesize" id="" class="select-input">
+              <option value="4" class="select-option">4</option>
+              <option value="8" class="select-option">8</option>
+              <option value="12" class="select-option">12</option>
+            </select>
+          </div>
+          <div class="container-search">
+            <div class="input-group">
+              <input
+                type="search"
+                name="dashboar-search"
+                placeholder="Search all dashboard"
+                class="search-input"
+              />
+              <i class="fa fa-search search-custom"></i>
+            </div>
+          </div>
+          <div class="container-addnew">
+            <button class="btn btn-danger">
+              <i class="fa fa-plus icon-white"></i>
+              New Tenant
+            </button>
+          </div>
+        </div>
+        <div class="sizedbox-v"></div>
+        <div class="table-container">
+          <div class="paper">
+            <table class="table">
+              <thead>
+                <tr class="tr">
+                  <th class="th" align="left">Account Name</th>
+                  <th class="th" align="left">Tenant Name</th>
+                  <th class="th" align="left">Owner</th>
+                  <th class="th" align="center">Number of Usres</th>
+                  <th class="th" align="center">Status</th>
+                  <th class="th" colspan="3" align="center">Action</th>
+                </tr>
+              </thead>
+              <tbody class="tbody">
+                <tr class="tr">
+                  <td class="td">Gepa</td>
+                  <td class="td">gepaghana.mylucent.io</td>
+                  <td class="td">user@gepaghana.com</td>
+                  <td class="td" align="center">4</td>
+                  <td class="td active" align="center">Active</td>
+                  <td class="td" align="center">
+                    <i class="fa fa-pen action-edit"></i>
+                    <i class="fa fa-trash-alt action-delete"></i>
+                    <i class="fa fa-ellipsis-v action-more"></i>
+                  </td>
+                </tr>
+                <tr class="tr">
+                  <td class="td">Gepa</td>
+                  <td class="td">gepaghana.mylucent.io</td>
+                  <td class="td">user@gepaghana.com</td>
+                  <td class="td" align="center">4</td>
+                  <td class="td active" align="center">Active</td>
+                  <td class="td" align="center">
+                    <i class="fa fa-pen action-edit"></i>
+                    <i class="fa fa-trash-alt action-delete"></i>
+                    <i class="fa fa-ellipsis-v action-more"></i>
+                  </td>
+                </tr>
+                <tr class="tr">
+                  <td class="td">Gepa</td>
+                  <td class="td">gepaghana.mylucent.io</td>
+                  <td class="td">user@gepaghana.com</td>
+                  <td class="td" align="center">5</td>
+                  <td class="td active" align="center">Active</td>
+                  <td class="td" align="center">
+                    <i class="fa fa-pen action-edit"></i>
+                    <i class="fa fa-trash-alt action-delete"></i>
+                    <i class="fa fa-ellipsis-v action-more"></i>
+                  </td>
+                </tr>
+                <tr class="tr">
+                  <td class="td">Gepa</td>
+                  <td class="td">gepaghana.mylucent.io</td>
+                  <td class="td">user@gepaghana.com</td>
+                  <td class="td" align="center">4</td>
+                  <td class="td inactive" align="center">Inactive</td>
+                  <td class="td" align="center">
+                    <i class="fa fa-pen action-edit"></i>
+                    <i class="fa fa-trash-alt action-delete"></i>
+                    <i class="fa fa-ellipsis-v action-more"></i>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="pagination-container">
+            <div class="pagination-left">
+              <p class="pagination-label">Showing 1-10 from 200</p>
+            </div>
+            <div class="pagination-right">
+              <i class="fa fa-chevron-left page-nav-btn"></i>
+              <span class="page active-page">1</span>
+              <span class="page">2</span>
+              <span class="page">3</span>
+              <span class="page">4</span>
+              <span class="page">5</span>
+              <i class="fa fa-chevron-right page-nav-btn"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
